@@ -1,0 +1,15 @@
+# Final Table 2 — reproducible sweep summary
+
+Median [IQR] across all valid hyperparameter configurations per arm. Values match manuscript Table 2 to 3 decimals. PCA from `v6_summary_wide.csv` (48 cfgs); Sequence from `results/sweeps_v7`; Seq+Bio from `results_ctx120/sweeps_v7`.
+
+| Arm | Horizon | n_configs | AUC median [IQR] | PR-AUC median [IQR] | Source |
+| --- | --- | --- | --- | --- | --- |
+| No-context (PCA) | 2y | 48 | 0.715 [0.692, 0.737] | 0.252 [0.218, 0.289] | /data/gli9/disease_progression/results/siamese_v6_sweeps/v6_summary_wide.csv |
+| No-context (PCA) | 3y | 48 | 0.608 [0.590, 0.633] | 0.328 [0.302, 0.357] | /data/gli9/disease_progression/results/siamese_v6_sweeps/v6_summary_wide.csv |
+| No-context (PCA) | 5y | 48 | 0.639 [0.620, 0.657] | 0.549 [0.503, 0.581] | /data/gli9/disease_progression/results/siamese_v6_sweeps/v6_summary_wide.csv |
+| Sequence context | 2y | 57 | 0.811 [0.790, 0.822] | 0.313 [0.301, 0.361] | results/sweeps_v7 |
+| Sequence context | 3y | 57 | 0.671 [0.648, 0.693] | 0.385 [0.359, 0.423] | results/sweeps_v7 |
+| Sequence context | 5y | 57 | 0.688 [0.670, 0.706] | 0.617 [0.583, 0.646] | results/sweeps_v7 |
+| Seq+Bio context | 2y | 63 | 0.797 [0.781, 0.820] | 0.312 [0.281, 0.366] | results_ctx120/sweeps_v7 |
+| Seq+Bio context | 3y | 63 | 0.694 [0.672, 0.712] | 0.402 [0.367, 0.439] | results_ctx120/sweeps_v7 |
+| Seq+Bio context | 5y | 63 | 0.685 [0.672, 0.700] | 0.606 [0.578, 0.625] | results_ctx120/sweeps_v7 |

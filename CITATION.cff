@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Siamese Hazard: a context-conditioned paired-methylation model for MCI-to-AD progression"
+abstract: >-
+  A Siamese discrete-time hazard model that predicts cumulative 2/3/5-year risk
+  of conversion from mild cognitive impairment (MCI) to Alzheimer's disease (AD)
+  from two longitudinal DNA-methylation draws per subject. CpG methylation is
+  projected to a low-dimensional latent space through a residual
+  context-conditioned projector, paired t0/t1 embeddings feed a shared hazard
+  core, and per-fold Platt calibration composes monotone cumulative risks.
+authors:
+  - alias: martinghl
+type: software
+license: MIT
+keywords:
+  - DNA methylation
+  - disease progression
+  - Alzheimer's disease
+  - survival analysis
+  - discrete-time hazard
+  - Siamese network
+repository-code: "https://github.com/martinghl/dnam-progression-hazard"
+date-released: 2026-06-20

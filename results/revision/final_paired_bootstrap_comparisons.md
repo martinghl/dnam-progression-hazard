@@ -1,0 +1,17 @@
+# Final paired bootstrap model comparisons (representative configurations)
+
+Paired stratified bootstrap (same resampled participants for both models), 2,000 iters, seed 12345. Δ = (second model) − (first). Two-sided bootstrap p = 2·min(Pr[Δ≤0], Pr[Δ≥0]). Negative ΔBrier favors the context model.
+
+| Horizon | Comparison | ΔAUC [95% CI] | p(AUC) | ΔPR-AUC [95% CI] | p(PR-AUC) | ΔBrier [95% CI] | p(Brier) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2y | Sequence − PCA | 0.097 [-0.028, 0.239] | 0.125 | 0.035 [-0.167, 0.291] | 0.634 | -0.004 [-0.017, 0.007] | 0.539 |
+| 3y | Sequence − PCA | 0.043 [-0.087, 0.169] | 0.532 | 0.091 [-0.067, 0.237] | 0.279 | -0.010 [-0.022, 0.002] | 0.098 |
+| 5y | Sequence − PCA | 0.063 [-0.011, 0.142] | 0.101 | 0.103 [-0.004, 0.203] | 0.056 | -0.017 [-0.033, -0.002] | 0.019 |
+| 2y | Seq+Bio − PCA | 0.084 [-0.010, 0.201] | 0.086 | 0.051 [-0.108, 0.277] | 0.503 | -0.001 [-0.011, 0.009] | 0.857 |
+| 3y | Seq+Bio − PCA | 0.047 [-0.067, 0.164] | 0.409 | 0.025 [-0.118, 0.199] | 0.691 | -0.002 [-0.014, 0.009] | 0.639 |
+| 5y | Seq+Bio − PCA | 0.053 [-0.019, 0.128] | 0.169 | 0.066 [-0.050, 0.179] | 0.255 | -0.011 [-0.029, 0.005] | 0.172 |
+| 2y | Seq+Bio − Sequence | -0.013 [-0.102, 0.071] | 0.746 | 0.016 [-0.140, 0.172] | 0.863 | 0.003 [-0.005, 0.011] | 0.519 |
+| 3y | Seq+Bio − Sequence | 0.004 [-0.099, 0.116] | 0.932 | -0.066 [-0.198, 0.100] | 0.467 | 0.007 [-0.006, 0.021] | 0.311 |
+| 5y | Seq+Bio − Sequence | -0.010 [-0.098, 0.080] | 0.863 | -0.037 [-0.151, 0.088] | 0.619 | 0.006 [-0.015, 0.026] | 0.624 |
+
+*Interpretation: with the corrected (stronger) PCA baseline, context-over-PCA AUC gains are POSITIVE but mostly NOT significant at the single-representative level — wide intervals consistent with limited event counts. Do not overstate significance; Sequence vs Seq+Bio are indistinguishable.*

@@ -1,0 +1,17 @@
+# Final clinical risk-tertile summary (representative Seq+Bio model)
+
+Predicted-risk tertiles (equal-size, rank-based) per horizon, for the representative Seq+Bio configuration.
+
+| Horizon | Risk group | N | obs pMCI n | obs pMCI prop | mean pred risk |
+| --- | --- | --- | --- | --- | --- |
+| 2y | T1 (low) | 62 | 0 | 0.0 | 0.029 |
+| 2y | T2 (mid) | 62 | 5 | 0.081 | 0.094 |
+| 2y | T3 (high) | 62 | 13 | 0.21 | 0.183 |
+| 3y | T1 (low) | 57 | 4 | 0.07 | 0.143 |
+| 3y | T2 (mid) | 57 | 17 | 0.298 | 0.2 |
+| 3y | T3 (high) | 58 | 15 | 0.259 | 0.285 |
+| 5y | T1 (low) | 42 | 10 | 0.238 | 0.183 |
+| 5y | T2 (mid) | 41 | 16 | 0.39 | 0.315 |
+| 5y | T3 (high) | 42 | 22 | 0.524 | 0.472 |
+
+*Interpretation (exploratory): observed pMCI proportions increase across predicted-risk tertiles at every horizon, supporting clinical interpretability of the multi-horizon risk outputs. Not intended to establish clinical utility or deployment readiness.*

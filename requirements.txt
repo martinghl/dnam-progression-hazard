@@ -1,0 +1,19 @@
+# Core model + training/evaluation pipeline
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+torch>=2.2.0
+
+# Convenience / IO used by some scripts
+tqdm>=4.66.0
+joblib>=1.3.0
+pyyaml>=6.0.0
+
+# --- Optional: only needed to reproduce the external-method benchmark in
+# --- results/ (Cox, RSF, DeepSurv, LogisticHazard, methylation aging clocks).
+# scikit-survival>=0.22
+# lifelines>=0.30
+# pycox>=0.3
+# torchtuples>=0.2
+# pyaging>=0.1.30
